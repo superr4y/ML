@@ -39,3 +39,7 @@ y = b_0 + b_1*x_1 + b_2*x_2 + ... + b_n*x_n
 #### Support Vector for Regression(SVR)
 #### Decision Tree Classification
 #### Random Forest Classification
+
+
+# Links
+- [Machine Learning Recipes with Josh Gordon](https://www.youtube.com/playlist?list=PLOU2XLYxmsIIuiBfYad6rFYQU_jL2ryal)

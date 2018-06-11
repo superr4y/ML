@@ -39,3 +39,24 @@ regressor.fit(X_train, y_train)
 
 # Predicting the Test set results
 y_pred = regressor.predict(X_test)
+
+import statsmodels.formula.api as sm
+X = np.append(arr=np.ones((50, 1)).astype(int), values=X, axis=1)
+X_opt = X[:, :]
+index_list = list(range(0, 6))
+SL = 0.05
+
+while True:
+    X_opt = X_opt[:, index_list]
+    index_list = list(range(len(index_list)))
+    regressor_OLS = sm.OLS(endog=y, exog=X_opt).fit()
+    print(regressor_OLS.summary())
+    pvalues = regressor_OLS.pvalues
+    if len(pvalues) == 0:
+        break
+    if pvalues.max() > SL:
+        index_list.pop(pvalues.argmax())
+    else:
+        break
+
+
