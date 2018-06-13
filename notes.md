@@ -71,6 +71,17 @@ Adj_R^2 = 1 - (1 - R^2)*(n-1)/(n-p-1)
 while p = number of regressors (number of independend variables) and n is the sample size
 ```
 
+## Classification
+
+### Logistic Regression
+
+ln((p)/(1-p)) = b_0 + b_1*x
+
+### K-NN
+
+
+
+
 
 # Links
 
