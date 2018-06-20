@@ -85,6 +85,57 @@ ln((p)/(1-p)) = b_0 + b_1*x
 
 ...
 
+### Bayes Theorem
+
+P(A|B) = (P(B|A) * P(A))/P(B)
+    ^
+    |__ *given* this condition is alwas true
+
+Exapmle:
+m1: 30/h
+m2: 20/h
+P(d) = 0.01
+P(m1|d) = 0.5
+P(m2|d) = 0.5
+  ^  ^
+  |  |__ only from the set of defective parts
+  |___ propability that it is from m2
+
+Question:
+P(d|m2) = ?
+
+Solution:
+m1 + m2 = 50/h
+P(m1) + P(m2) = 1
+
+50 ---> 100%
+2  ---> 1%
+30 ---> 30*2 = 60%
+
+P(m1) = 0.6
+P(m2) = 0.4
+
+P(d|m2) = (P(m2|d)*P(d))/P(m2)
+        = (0.5*0.01)/0.4
+        = 0.0125
+
+
+### Naive Bayes
+
+               Prior Propbability
+                    |
+P(A1|B) = (P(B|A1)*P(A1))/P(B)
+   ^           ^           ^
+   |           |           |
+   |        Likelihood   Marginal Likelihood
+   |__ Posterior Probability
+
+P(A2|B) = (P(B|A2)*P(A2))/P(B)
+P(A1|B) v.s. P(A2|B)
+
+
+
+
 
 # Links
 
