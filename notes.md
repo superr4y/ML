@@ -134,7 +134,58 @@ P(A2|B) = (P(B|A2)*P(A2))/P(B)
 P(A1|B) v.s. P(A2|B)
 
 
+### Decision Tree
 
+Tow options:
+- regression  ---> real value
+- classification ---> group value
+
+### Random Forest
+
+...
+
+
+
+## Clustering
+
+Clustering is similar to classification, but the basis is different. 
+In Clustering you don’t know what you are looking for, and you are 
+trying to identify some segments or clusters in your data. 
+
+### K-Means Clustering
+
+...
+
+Choosing the right number of clusters
+cv(P, Cx) = sum(|pi - Cx|^2) pi in P
+where: 
+P = points in cluster x
+Cx = centroid of cluster x
+
+WCSS = cv(P1, C1) + cv(P2, C2) + cv(P3, C3) ...
+best if all points has own cluster, WCSS = 0
+Elbow method: plot WCSS->Cluster number look for optimal cluster number in plot
+
+### Hierarchical Clulstering
+
+Agglomorative (focus)
+- bottom up
+
+Divisive
+- top down
+
+Dendogram contains "memory" of the hierarchical clustering
+
+
+# Association Rule Learning (ARL)
+
+## Apriori
+    Support(M) = (#M datapoints)/(#M applay)
+    Confidence(M_1 -> M_2) = (# M_1 and M_2 are in same datapoint)/(#M_1 datapoints)
+    Lift(M_1 -> M_2)  = Confidence(M_1 -> M_2)/Support(M_2)
+
+
+## Eclat
 
 
 # Links
