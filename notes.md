@@ -180,13 +180,25 @@ Dendogram contains "memory" of the hierarchical clustering
 # Association Rule Learning (ARL)
 
 ## Apriori
-    Support(M) = (#M datapoints)/(#M applay)
-    Confidence(M_1 -> M_2) = (# M_1 and M_2 are in same datapoint)/(#M_1 datapoints)
-    Lift(M_1 -> M_2)  = Confidence(M_1 -> M_2)/Support(M_2)
+
+Support(M) = (# M in datapoints)/(#datapoints)
+Confidence(M_1 -> M_2) = (# M_1 and M_2 are in same datapoint)/(#M_1 datapoints)
+Lift(M_1 -> M_2)  = Confidence(M_1 -> M_2)/Support(M_2)
 
 
 ## Eclat
 
+Support(M) = (# M in datapoints)/(#datapoints)
+...
+
+# Reinforcement Learning
+
+## Upper Confidence Bound (UCB)
+
+solve Multi-Armed Bandit Problem
+combine exploration and exploitation
+
+## Thampson Sampling
 
 # Links
 
